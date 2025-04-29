@@ -20,10 +20,17 @@ const Lista =() => {
 
                     <tbody> {/*tbody => corpo da tabela*/}
                         <tr className="item_lista">
-                            <td>Velozes e Furiosos</td>
-                            <td>Ação</td>
-                            <td><img src={Editar} alt="Imagem de uma caneta" /></td>
-                            <td><img src={Excluir} alt="Imagem de uma caixa de lixo" /></td>
+                            <td data-cell="Nome">Velozes e Furiosos</td>
+                            <td data-cell="Genero">Ação</td>
+                            <td data-cell="Editar"><img src={Editar} alt="Imagem de uma caneta" /></td>
+                            <td data-cell="Excluir"><img src={Excluir} alt="Imagem de uma caixa de lixo" /></td>
+                        </tr>
+                        
+                        <tr className="item_lista">
+                            <td data-cell="Nome">Harry Potter e a pedra de crack</td>
+                            <td data-cell="Genero">Científico</td>
+                            <td data-cell="Editar"><img src={Editar} alt="Imagem de uma caneta" /></td>
+                            <td data-cell="Excluir"><img src={Excluir} alt="Imagem de uma caixa de lixo" /></td>
                         </tr>
                     </tbody>
 

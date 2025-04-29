@@ -10,6 +10,11 @@
     text-transform: uppercase;
 }
 
+.tabela{
+    width: 100%;
+    margin-top: 30px;
+}
+
 .listagem hr{
     max-width: 300px;
     width: 100%;
@@ -24,11 +29,12 @@
 }
 .tabela table{
     width: 100%;
+
+    border-collapse: collapse;
 }
 
 .tabela .table_cabecalho:first-child{
-    width: 100%;
-    margin-top: 35px;
+    width: 300px;
 }
 
 .tabela.table_cabecalho :nth-child(2){
@@ -40,4 +46,40 @@
 
 .item_lista td{
     padding: 20px 0 5px 0;
+}
+
+.item_lista{
+    text-align: center;
+
+    border-bottom: solid 1px #73061B20;
+}
+
+
+@media screen and (max-width: 768px) {
+.tabela thead{
+    display: none;
+}
+
+.item_lista td{
+    display: grid;
+    text-align: left;
+    padding: 10px 10px 10px 0;
+    grid-template-columns: 10ch auto;
+}
+
+.item_lista td::before{
+    content: attr(data-cell)":";
+    font-weight: 700;
+    width: 80px;
+    text-align: left;
+}
+
+.item_lista te :first-child{
+    margin-bottom: 24px;
+}
+
+.item_lista te :last-child{
+    margin-bottom: 24px;
+}
+
 }
